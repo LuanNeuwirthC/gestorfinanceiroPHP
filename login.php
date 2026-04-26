@@ -1,10 +1,9 @@
 <?php
-ob_start();
-session_start(); 
+session_start();
 
-$email="joaozin.da.silva32@gmail.com";
-$senha=password_hash("24124", PASSWORD_BCRYPT);
-$nome='João da Silva'; 
+$email="andre@gmail.com";
+$senha=password_hash("123456", PASSWORD_BCRYPT);
+$nome='André'; 
 
 
   function validarSenha($senhaDigitada, $hashSalvo) {
@@ -30,6 +29,7 @@ $erro = "";
 }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -61,7 +61,7 @@ $erro = "";
                     <label class="block text-xs font-bold text-slate-500 uppercase mb-1">E-mail</label>
                     <div class="relative">
                         <i class="fa-regular fa-user absolute left-3 top-3 text-slate-400"></i>
-                        <input type="text" name="email" value="joaozin.da.silva32@gmail.com" class="w-full bg-slate-50 border border-slate-300 rounded-lg pl-10 pr-4 py-2 focus:ring-2 focus:ring-purple-500 outline-none">
+                        <input type="text" name="email" placeholder="seunome@gmail.com" class="w-full bg-slate-50 border border-slate-300 rounded-lg pl-10 pr-4 py-2 focus:ring-2 focus:ring-purple-500 outline-none">
                     </div>
                 </div>
 
@@ -77,7 +77,7 @@ $erro = "";
                     ENTRAR NO SISTEMA
                 </button>
             </form>
-            <p class="text-center text-xs text-slate-400 mt-6">PHP Academic Project &copy; 2024</p>
+            <p class="text-center text-xs text-slate-400 mt-6">Developer by Lorenzo and Luan &copy; 2026</p>
         </div>
     </div>
 

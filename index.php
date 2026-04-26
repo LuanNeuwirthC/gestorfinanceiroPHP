@@ -1,11 +1,12 @@
 <?php 
+ob_start();
 include 'funcoes.php';
 verificarAcesso();
+//session_start();
 
 $totalReceitas = 0;
 $totalDespesas = 0;
 
-// Calcula os totais com base no que está salvo na sessão
 foreach ($_SESSION['transacoes'] as $t) {
     if ($t['tipo'] === 'receita') {
         $totalReceitas += $t['valor'];
